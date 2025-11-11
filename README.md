@@ -52,28 +52,16 @@ Follow these instructions to get a local copy up and running for development and
     Create a `.env.local` file in the root of the project and add the necessary environment variables. You will need to provide the contract address for the SBTs.
 
     ```env
-    BASESCAN_API_KEY=7QRZWJG4B7J2ZD5ITTFRSDV5U5BIA2NGPW
-BASE_SEPOLIA_RPC_URL=https://base-sepolia.infura.io/v3/50fcb4cedd984393b712cec194af215c
-BASE_RPC_URL=https://base-mainnet.infura.io/v3/50fcb4cedd984393b712cec194af215c
-
-# WalletConnect
-NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID=...
-
-# Memory API (Real)
-NEXT_PUBLIC_MEMORY_API_URL=https://api.memoryproto.co
-NEXT_PUBLIC_MEMORY_API_KEY=mem_7...
-
-# Thirdweb
-NEXT_PUBLIC_THIRDWEB_CLIENT_ID=..
-THIRDWEB_SECRET_KEY=...
-
-# Contract
-NEXT_PUBLIC_SBT_CONTRACT_ADDRESS=0x
-CONTRACT_URI=""
-
-# Infura
-NEXT_PUBLIC_INFURA_KEY=...
-
+    BASESCAN_API_KEY=...
+    BASE_SEPOLIA_RPC_URL=https://base-sepolia.infura.io/v3/<keys here>
+    BASE_RPC_URL=https://base-mainnet.infura.io/v3/(key here>
+    NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID=...
+    NEXT_PUBLIC_MEMORY_API_URL=https://api.memoryproto.co
+    NEXT_PUBLIC_MEMORY_API_KEY=mem_7...
+    NEXT_PUBLIC_THIRDWEB_CLIENT_ID=..
+    THIRDWEB_SECRET_KEY=...
+    NEXT_PUBLIC_SBT_CONTRACT_ADDRESS=0x
+    NEXT_PUBLIC_INFURA_KEY=...
     ```
 
 ### Usage
