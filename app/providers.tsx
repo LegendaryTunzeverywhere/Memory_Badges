@@ -2,16 +2,15 @@
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { createConfig, http, WagmiProvider } from 'wagmi';
-import { base, baseSepolia } from 'wagmi/chains';
+import { base } from 'wagmi/chains';
 import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import { useState } from 'react';
 import { ThirdwebProvider } from 'thirdweb/react';
 
 export const config = createConfig({
-  chains: [base, baseSepolia],
+  chains: [base],
   transports: {
     [base.id]: http('https://mainnet.base.org'),
-    [baseSepolia.id]: http('https://sepolia.base.org'),
   },
 });
 

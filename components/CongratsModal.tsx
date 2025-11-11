@@ -62,7 +62,7 @@ export default function CongratsModal({
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <a
-              href={`https://base-sepolia.blockscout.com/tx/${txHash}`}
+              href={`https://base.blockscout.com/tx/${txHash}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 w-full justify-center px-6 py-3 bg-purple-600 text-white rounded-xl font-bold hover:bg-purple-700 transition-colors"
