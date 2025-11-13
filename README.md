@@ -23,58 +23,35 @@ Memory Badges is a decentralized application (dApp) that allows users to claim S
   - [Viem](https://viem.sh/): For low-level Ethereum operations.
   - [Ethers.js](https://ethers.io/): As a dependency for Web3 libraries.
 
-## Getting Started
+## Documentation
 
-Follow these instructions to get a local copy up and running for development and testing purposes.
+https://book.getfoundry.sh/
 
-### Prerequisites
+## Usage
 
-- [Node.js](https://nodejs.org/) (v18 or later recommended)
-- [Yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/)
-- A crypto wallet (e.g., MetaMask)
+### Build
 
-### Installation
+```shell
+$ forge build
+```
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/LegendaryTunzeverywhere/Memory_Badges.git
-    cd Memory_Badges
-    ```
+### Test
 
-2.  **Install dependencies:**
-    ```bash
-    npm install
-    # or
-    yarn install
-    ```
+```shell
+$ forge test
+```
 
-3.  **Set up environment variables:**
-    Create a `.env.local` file in the root of the project and add the necessary environment variables. You will need to provide the contract address for the SBTs.
+### Format
 
-    ```env
-    BASESCAN_API_KEY=7QRZWJG4B7J2ZD5ITTFRSDV5U5BIA2NGPW
-BASE_SEPOLIA_RPC_URL=https://base-sepolia.infura.io/v3/50fcb4cedd984393b712cec194af215c
-BASE_RPC_URL=https://base-mainnet.infura.io/v3/50fcb4cedd984393b712cec194af215c
+```shell
+$ forge fmt
+```
 
-# WalletConnect
-NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID=...
+### Gas Snapshots
 
-# Memory API (Real)
-NEXT_PUBLIC_MEMORY_API_URL=https://api.memoryproto.co
-NEXT_PUBLIC_MEMORY_API_KEY=mem_7...
-
-# Thirdweb
-NEXT_PUBLIC_THIRDWEB_CLIENT_ID=..
-THIRDWEB_SECRET_KEY=...
-
-# Contract
-NEXT_PUBLIC_SBT_CONTRACT_ADDRESS=0x
-CONTRACT_URI=""
-
-# Infura
-NEXT_PUBLIC_INFURA_KEY=...
-
-    ```
+```shell
+$ forge snapshot
+```
 
 ### Usage
 
