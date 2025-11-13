@@ -1,18 +1,12 @@
 // lib/wagmi.ts
-import { createConfig, http } from 'wagmi';
+import { getDefaultConfig } from '@rainbow-me/rainbowkit';
 import { base } from 'wagmi/chains';
-import { injected, walletConnect, coinbaseWallet } from 'wagmi/connectors';
 
 const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID!;
 
-export const config = createConfig({
+export const config = getDefaultConfig({
+  appName: 'Memory Badges',
+  projectId,
   chains: [base],
-  connectors: [
-    injected(),
-    walletConnect({ projectId }),
-    coinbaseWallet({ appName: 'Memory Badges' }),
-  ],
-  transports: {
-    [base.id]: http('https://mainnet.base.org'),
-  },
+  ssr: true, // If your dApp uses server side rendering (SSR)
 });
